@@ -1,0 +1,198 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+body {
+  height: 100vh;
+  width: 100vw;
+  font-family: "Helvetica Neue";
+  position: relative;
+}
+
+.aside {
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.3);
+  position: fixed;
+  bottom: 0;
+  top: 0;
+  left: 0;
+  z-index: 1;
+}
+
+.aside-content {
+  height: 100vh;
+  background-color: #fff;
+  width: 550px;
+  position: fixed;
+  right: 0;
+  top: 0;
+  bottom: 0;
+}
+
+.main-button {
+  margin-top: 50px;
+  margin-left: 50px;
+  padding: 15px 20px;
+  background-color: transparent;
+  border: 3px solid black;
+  font-size: 24px;
+  cursor: pointer;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  background-color: #6cd1d1;
+  color: #fff;
+  padding: 14px;
+  min-height: 10vh;
+}
+
+.header > span {
+  font-size: 20px;
+  cursor: pointer;
+}
+
+.header > .title {
+  font-size: 20px;
+  letter-spacing: 0.75px;
+  font-weight: 400;
+  margin-left: 20px;
+}
+
+.section {
+  height: 80vh;
+  overflow-y: auto;
+}
+
+.footer {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  min-height: 10vh;
+  background-color: rgba(0, 0, 0, 0.1);
+  padding: 20px;
+}
+
+.primary-btn {
+  padding: 0.75em;
+  border-radius: 5px;
+  border: none;
+  cursor: pointer;
+}
+
+.white {
+  background-color: #65b6aa;
+  color: #fff;
+}
+
+.danger {
+  color: red;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding: 20px;
+}
+
+form > input {
+  padding: 10px;
+  outline: none;
+  border: 1px solid black;
+  border-radius: 5px;
+}
+
+.circle {
+  width: 10px;
+  height: 10px;
+  border-radius: 100%;
+  background-color: gray;
+}
+
+.red-bgcolor {
+  background-color: red;
+}
+
+.green-bgcolor {
+  background-color: green;
+}
+
+.traits {
+  display: flex;
+  justify-content: end;
+  gap: 10px;
+  padding: 20px;
+}
+
+.traits > div {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+select {
+  padding: 10px;
+}
+
+select > option {
+  padding: 10px;
+}
+
+.addSchema {
+  display: flex;
+  color: #008080;
+  padding: 20px;
+  cursor: pointer;
+}
+
+.addSchema > div:nth-child(2) {
+  text-decoration: underline;
+  margin-left: 5px;
+  font-weight: bold;
+}
+
+.hidden {
+  display: none;
+}
+
+.segement-list {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  padding: 10px 20px;
+}
+
+select {
+  width: 80%;
+}
+
+.delete-icon {
+  position: relative;
+  padding: 10px 20px;
+  background-color: lightcyan;
+  border-radius: 5px;
+}
+
+.delete-icon::after {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  content: "";
+  width: 24px;
+  height: 4px;
+  border-radius: 100000px;
+  background-color: darkslategrey;
+}
+
+.stretch {
+  align-self: stretch;
+}
+
+.sub-title {
+  padding: 20px;
+}
